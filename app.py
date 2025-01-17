@@ -8,6 +8,6 @@ def index():
     return ("no work")
 
 @app.route("/hello/")
-@app.route("/route/<name_data>/")
+@app.route("/hello/<name_data>/")
 def hello_there(name_data = None):
     return render_template("hello_there.html", name=name_data)
