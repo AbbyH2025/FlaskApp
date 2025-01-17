@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Disapointment</title>
-    </head>
-    <body>
-        <h1>
-            Welcome to the worst flask app
-            <br>
-            
-        </h1>
-        <img src='templates/IMG_20231212_202948_01.jpg'>
-        {% if name%}
-            <p> Hello, {{ name }} !</p>
 
-        {% else %}
-            <p> Whats your name?</p>
-        {% endif %}
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>Disapointment</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}" />
+</head>
+
+<body>
+    <h1>
+        Welcome to the worst flask app
+        <br>
+
+    </h1>
+ 
+    {% if name%}
+    <p> Hello, {{ name }} !</p>
+1
+    {% else %}
+    <p> Whats your name?</p>
+    {% endif %}
+</body>
 
 </html>
